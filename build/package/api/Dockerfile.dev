@@ -9,7 +9,7 @@ RUN apt-get update \
   # install base packages
   && apt-get install -y git unzip libzip-dev libcurl4-openssl-dev pkg-config libssl-dev apt-transport-https gnupg apt-utils --no-install-recommends \
   # install mongodb packages
-  && pecl install mongodb \
+  && pecl install mongodb-1.16.2 \
   && docker-php-ext-enable mongodb \
   # install mysql packages
   && docker-php-ext-install mysqli pdo pdo_mysql zip \
