@@ -38,6 +38,7 @@ services:
       - 3000:3000
     volumes:
       - ./web:/app
+      - /app/node_modules # Use a second anonymous volume for node_modules
     networks:
       - main
 
